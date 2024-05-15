@@ -599,6 +599,25 @@ Summary:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+MongoDB:
+
+Query:
+	To get prices greater than a certain price:
+
+	query = {"Price": {"$gt" : 20000 } }
+
+	Returns all items with a price value higher than £20000.
+
+Query:
+	To get two types of descriptions:
+
+	query = ("$or": ["Description": "Flour"], ["Description": "Sugar"])
+
+	Will return a table of all items with a desctiption of sugar or flour.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 --              Week 7           --
 -- Data standards and Governance --
