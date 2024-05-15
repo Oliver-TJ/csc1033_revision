@@ -1,0 +1,958 @@
+-- WEEK 1 --
+--Big Data--
+
+What is Big Data?
+
+Definition: Big Data refers to a massive amount of data that surpasses the capabilities of traditional data processing methods. It encompasses various characteristics such as volume, velocity, variety, and complexity.
+
+
+Characteristics:
+Volume: 	Large amounts of data.
+Variety: 	Different types and sources of data.
+Velocity:	High speed at which data is generated and processed.
+Complexity: Data that is structured, unstructured, or semi-structured.
+
+Examples of Data Types:
+Structured Data: 	Organized and easily searchable, like data in databases.
+Unstructured Data: 	Not organized in a predefined manner, like text data or social media posts.
+Data in Motion: 	Real-time data streams, like sensor data or network traffic.
+
+Three Vs of Big Data:
+Volume: 	Refers to the scale of data.
+Velocity: 	Refers to the speed at which data is generated and processed.
+Variety: 	Refers to the different types and sources of data.
+
+Is Big Data new?
+Change Since 2011:
+Ubiquity: Automated data capture, exponential growth in data storage, and increased network bandwidth.
+
+Examples of Big Data:
+New York Stock Exchange: Generates terabytes of trade data daily.
+Facebook:				 Generates petabytes of data daily through various activities like photo uploads and messages.
+Jet Engine: 			 Generates terabytes of data per flight.
+Walmart: 				 Processes petabytes of data daily for various operations.
+
+Issues in Big Data:
+Data ≠ Knowledge: 					Data must be analyzed and interpreted to derive meaningful insights.
+Data Rich, Information Poor (DRIP): Having large datasets but lacking actionable information.
+Opportunistic Data Collection:		Data collected may not always align with current research questions.
+Privacy and Ethical Considerations: Concerns regarding data privacy, confidentiality, and ethical usage.
+Big Data Processing:
+
+Benefits:
+Improved decision-making through data-driven insights.
+Enhanced customer service.
+Facilitates data-intensive scientific discoveries in various fields.
+Data-Driven Decision Making – Data Science:
+
+Core Business Component: 	Utilization of large datasets for analysis and decision-making.
+Passive Data Collection: 	Data can be collected efficiently and inexpensively.
+Quantitative Information:	Ability to generate quantitative insights from data.
+
+Final Note:
+Quality over Quantity: 		  More data does not necessarily equate to more information.
+Relevance and Interpretation: Data must be relevant, interpretable, and contextualized for meaningful insights.
+
+
+
+Flashcard 1: Schema Scalability
+
+Front:
+Challenge: Scalability
+
+Back:
+	- Traditional RDBMS struggle to scale for Big Data.
+	- Adding more hardware becomes expensive.
+	- Scaling up may not provide a sustainable solution.
+
+
+Flashcard 2: Schema Flexibility Challenge
+
+Front:
+Challenge: Schema Flexibility
+
+Back:
+	- RDBMS require predefined schema.
+	- Big Data often involves unstructured data.
+	- RDBMS struggle with evolving schemas.
+
+Flashcard 3: Latency Challenge
+
+Front:
+Challenge: Latency
+
+Back:
+	- RDBMS optimized for transactional processing.
+	- Big Data requires low latency for real-time insights.
+	- RDBMS may struggle to meet low-latency requirements.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+--  WEEK 2  --
+--Data-bases--
+
+Overview of Database Types:
+
+Graph Databases:
+- View data as mathematical graphs.
+- Focus on relationships between data.
+- Often used in social networking and data science.
+
+Column Stores:
+- Store data in columns rather than rows.
+- Suitable for OLAP and data warehousing.
+- Faster for column-based searches but slower for row-based searches.
+
+Key-Value Stores:
+- Based on hashing; simple key maps to complex value.
+- Retrieval is fast but limited querying powers.
+- Values can be diverse, but keys must be unique.
+
+Document Databases:
+- Use Document-Oriented model to store data.
+- Documents are self-contained, can vary in structure.
+- Offer CRUD operations, semi-structured data storage.
+- Good for varied data but may lead to duplication and inconsistency.
+
+Summary:
+- Graph databases focus on relationships.
+- Column stores excel in column-based searches.
+- Key-value stores offer fast retrieval but limited querying.
+- Document databases are flexible but may lead to data duplication and inconsistency.
+
+
+Flashcard 1: Graph Databases
+
+Front: Graph Databases
+
+Back:
+	- View data as mathematical graphs.
+	- Focus on relationships between data.
+	- Often used in social networking and data science.
+
+Flashcard 2: Column Stores
+
+Front: Column Stores
+
+Back:
+	- Store data in columns rather than rows.
+	- Suitable for OLAP and data warehousing.
+	- Faster for column-based searches but slower for row-based searches.
+
+Flashcard 3: Key-Value Stores
+
+Front: Key-Value Stores
+
+Back:
+	- Based on hashing; simple key maps to complex value.
+	- Retrieval is fast but has limited querying powers.
+	- Values van be diverse, but keys must be unique.
+
+Flashcard 4: Document Databases
+
+Front: Document Databases
+
+Back:
+	- Use Document-Oriented model to store data.
+	- Documents are self-contained, can vary in structure.
+	- Offer CRUD operations, semi-structured data storage.
+	- Good for varied data but may lead to duplication and inconsistency.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+--Week 3--
+-- XML  --
+
+Semantic Web:
+- Extension of the World Wide Web promoting common data formats and exchange protocols.
+- Focuses on meaning rather than syntax, emphasizing "things."
+
+RDF (Resource Description Framework):
+- Data model for objects and relations.
+- Supports interoperability between web applications.
+- Includes resources, properties, and statements.
+
+Logic:
+- Study of reasoning principles, offering formal languages.
+- Enables automated deduction and explanation for conclusions.
+
+XML (Extensible Markup Language):
+- Metalanguage for representing and manipulating data elements.
+- Derived from SGML, used for describing and exchanging data.
+
+XML Databases:
+- Store XML documents, facilitating access and flexibility.
+- Two types: XML-enabled (traditional database mapping) and Native XML (XML-centric).
+
+XML vs. Relational Model:
+- XML is hierarchical, self-describing, and has inherent ordering.
+- Relational data relies on logical relationships, lacks inherent ordering, and has strict schemas.
+
+XML Document Rules:
+- Must be well-formatted, properly nested, and case-sensitive.
+- Can use DTD or XSD for validation.
+
+DTD (Document Type Definition):
+- Describes XML elements' composition and syntax rules.
+- Can be inline or external, providing valid tags for each document type.
+
+Hybrid DBMS:
+- Allows use of both relational and XML data models.
+Example: IBM's DB2, which integrates AI capabilities.
+
+XPath:
+- Language for extracting parts of XML documents using path expressions.
+- Supports various node types like elements, attributes, and text.
+
+Flashcard 1: Semantic Web
+
+Front: Semantic Web
+
+Back:
+	- Extension of the world wide web
+	- Promotes common data formats and exchange protocols.
+	- Emphasizes meaning over syntax.
+
+Flashcard 2: RDF (Resource Description Framework)
+
+Front: RDS
+
+Back:
+	- Data model for objects and relations.
+	- Enables interoperability between web applications.
+	- Includes resources, properties and statements.
+
+Flashcard 3: Logic
+
+Front: Logic
+
+Back:
+	- Study of reasoning principles.
+	- Offers formal languages for expressing knowledge.
+	- Enables automated deduction and explanation.
+
+Flashcard 4: XML (Extensible Markup Language)
+
+Front: XML
+
+Back:
+	- Metalanguage for representing and manipulating data.
+	- Derived from SGML, used for describing and exchanging data.
+
+Flashcard 5: XML Databases
+
+Back: 
+	- Store XML documents, facilitating access and flexibility.
+	- Two types: XML-enabled (traditional databases mapping) and native XML.
+
+Flashcard 6: XML vs Relational Model
+
+Back:
+	- XML is hierarchical, self-describing and has inherent ordering.
+	- Relational data relies on logical relationships, lacks inherent ordering.
+
+Flashcard 7: XML document rules
+
+Back:
+	- Must be well-formatted, properly nested and case-sensitive.
+	- Can use DTD or XSD for validation.
+
+Flashcard 8: Hybrid DBMS
+
+Back:
+	- Allows use of both relational and XML data models.
+	- Example: IBM's DB2 which integrates AI capabilities.
+
+Flashcard 9: XPath
+
+Back: 
+	- Language for extracting parts of XML documents using path expressions.
+	- Supports various node types like elements, attributes and text.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+--             WEEK 4            --
+-- Distrubuted Database concepts --
+
+Overview:
+- Transactions ensure database consistency.
+- Problems in multi-user databases include lost updates, dirty reads, and inconsistent analysis.
+
+Locking:
+- DBMS uses locking to ensure serializable schedules.
+- Two-phase locking (2PL) and deadlock handling are common techniques.
+
+Distributed Databases:
+- Data stored across different locations, invisible to users.
+- CAP theorem governs trade-offs between consistency, availability, and partition tolerance.
+
+Logging, Archiving, and Recovery:
+- Transactions logged for recovery in case of failures.
+- Periodic checkpoints and offline archives maintain data integrity.
+
+Advanced Topics Overview:
+- Growth in database size necessitates performance enhancements.
+- Indexing and query optimization are crucial for efficient query processing.
+
+Indexing:
+- Indexes improve query performance by allowing rapid data retrieval.
+- Clustered and non-clustered indexes are common, but indexing should be strategic.
+
+Query Processing & Optimisation:
+- DBMS makes decisions to optimize query processing.
+- Optimizer determines the most efficient query execution plan.
+
+Flashcard 1: Overview
+
+Back:
+	- Transactions ensure database consistency.
+	- Problems include lost updates, dirty reads and inconsistent analysis.
+
+Flashcard 2: Locking
+
+Back: 
+	- Ensures serialisable schedules in DBMS.
+	- Techniques include two-phase locking and deadlock handling.
+
+Flashcard 3: Distributed Databases
+
+Back:
+	- Data stored across locations, invisible to users.
+	- CAP theorem governs trade-offs between consistency, availability and partition tolerance.
+
+Flashcard 4: Logging, Archiving and recovery
+
+Back:
+	- Transactions logged for recovery in case of failures.
+	- Checkpoints and offline archives maintain data integrity.
+
+Flashcard 5: Advanced topics Overview
+
+Back:
+	- Growth in database size necessitates performance enhancements.
+	- Indexing and query optimization are crucial for efficient query processing.
+
+Flashcard 6: Indexing
+
+Back: 
+	- Indexes improve query performance.
+	- Clustered and non-clustered indexes are common, but stratedgic indexing is important.
+
+Flashcard 7: Query processing & Optimisation
+
+Back:
+	- DBMS optimizes query processing for efficiency.
+	- Optimiser determines the most efficient query execution plan.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+--       Week 5       --
+-- Data Warehousing 1 --
+
+Data Warehouse
+Definition: 
+	Coined by Bill Inmon in 1990, a data warehouse is a collection of data aiding analysts in informed decision-making.
+OLAP Tools: 
+	Facilitate multidimensional data analysis, leading to data generalization and mining.
+
+Key Features:
+Subject-oriented: 
+	Focuses on modeling and analyzing data around subjects rather than ongoing operations.
+Integrated: 
+	Integrates data from various sources like relational databases or flat files.
+Time-variant: 
+	Identifies data collected within specific time periods (e.g., last 12 months).
+Non-volatile: 
+	Previous data remains intact when new data is added.
+
+Types of Data Warehouse:
+Information Processing: 
+	Supports data processing via querying, basic stats, and reporting.
+Analytical Processing: 
+	Enables analytical operations like OLAP (slice, dice, drill down/up).
+Data Mining: 
+	Supports knowledge discovery, pattern identification, classification, and prediction.
+
+Enterprise Data Warehouse (EDW):
+	- Services entire enterprise, incorporating operational data stores and data marts.
+	- Data marts, either physical or virtual, cater to individual departments or groups.
+
+Data Warehouse Functions:
+ETL (Extract, Transform, Load): 
+	Extracts data, cleans and transforms it, then loads it into the warehouse.
+Refreshing: 
+	Updates data sources in the warehouse.
+Query Management: 
+	Directs queries to appropriate data sources.
+
+Process Flow:
+	- Extract and load data.
+	- Clean and transform data.
+	- Backup and archive data.
+	- Manage queries, directing them to the right sources.
+
+Metadata:
+	Data about data, acting as a roadmap to the data warehouse and defining warehouse objects.
+
+Data Modelling Approaches:
+	- Entity Relationship Modelling and Normalization (Inmon Approach)
+	- Dimensional Modelling (Kimball Approach)
+
+Dimensional Model Components:
+Fact Tables: 
+	Hold business measurements (e.g., sales) and can be transactional, snapshot, or accumulating snapshot.
+Dimension Tables: 
+	Store dimension descriptions (e.g., product, customer) and support surrogate primary keys.
+
+Kimball vs. Inmon:
+Two approaches to data warehouse design: 
+	- Top-Down (Inmon) vs. Bottom-Up (Kimball).
+	- Inmon advocates a top-down design, while Kimball favors a bottom-up approach.
+
+Summary:
+	- Data warehouses contain historical data for analysis.
+	- They use denormalized structures for faster performance.
+	- Designed differently from operational databases, focusing on analysis rather than transactional operations.
+
+Flashcard 1: Data Warehouse
+
+Back:
+	- Definition: A collection of data aiding analysts in informed decision-making.
+	- OLAP Tools: Facilitate multidimensional data analysis, leading to data generalization and mining.
+
+Flashcard 2: Key Features
+
+Back:
+	- Subject-oriented: Focuses on modelling and analysing data around subjects.
+	- Integrated: Integrates data from various sources.
+	- Time-variant: Identifies data collected within specific time periods.
+	- Non-volatile: Previous data remains intact when new data is added.
+
+Flashcard 3: Types of data warehouse
+
+Back:
+	- Information-Processing: Supports data processing via querying, basic stats and reporting.
+	- Analytical-Processing: Enables operation like OLAP (slice, dice, drill down/up).
+	- Data-Mining: Supports knowledge discovery, pattern identification, classification, and prediction.
+
+Flashcard 4: Enterprise Data Warehouse (EDW)
+
+Back:
+	- Services entire enterprise, incorporating operational data stores and data marts.
+	- Data marts cater to individual departments or groups.
+
+Flascard 5: Data Warehouse Functions
+
+Back:
+	- ETL: Extracts, transforms and loads data into the warehouse.
+	- Refreshing: Updates data sources in the warehouse.
+	- Query Management: Directs queries to appropriate data sources.
+
+Flascard 6: Metadata
+
+Back:
+	- Data about data, acting as a roadmap to the warehouse and defining warehouse objects.
+
+Flashcard 7: Data Modelling Approaches
+
+Back:
+	- Entity Relationship Modelling and Normalisation: Inmon Approach.
+	- Dimensional Modelling (Kimball Approach)
+
+Flashcard 8: Dimensional Model Components
+
+Back:
+	- Fact Tables: Hold business measurements (transactional, snapshot or accumulating snapshot).
+	- Dimension Tables: Store dimension desctiptions and support surrogate primary keys.
+
+Flashcard 9: Kimball vs Inmon
+
+Back:
+	- Two approaches to data warehouse designL Top-Down (Inmon) vs. Bottom-Up (Kimball)
+
+Flashcard 10: Summary
+
+Back:
+	- Data warehouse contain historical data for analysis.
+	- They use denormaised structures for faster performance.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+--       Week 6       --
+-- Data Warehousing 2 --
+
+Where the data is kept:
+	- Data warehouses dont change the data in the original sources.
+	- The data warehouses make and store another copy and is periodically updated or integrates data from the source.
+	- Data warehouses should not replace a database of any architecture.
+
+Context:
+	- Data warehouses and OLAP servers are examples of busuness intelligence software.
+	- This is to help businesses make decisions.
+	- Data mining is also an example of this.
+
+Business intelligence software:
+	Examples:
+		- Data cleansing - software that cleanses dirty data.
+		- Local information systems - some overlap with geographical systems
+		  to report statistical data with a geographical aim.
+
+	- Not all organisations will use all of the different types of businesses intelligence software.
+	- Will often be used by larger organisations
+		- Cost reasons - old software used to be expensive but some new software is free.
+		- Need a large database to store in the intelligence software.
+		- Needs time to performe analytics.
+
+Data warehousing real-world example:
+	- Apache hive
+	- Built on top of other Apache products.
+	- Features a relational database of metadata.
+	- The website is very detailed!!!
+
+Data warehouse organisation:
+	- Inmon - E-R modelling
+	- Kimball - Dimensional modelling - e.g. star or snowdflake schema.
+
+Denormalisation in star schemas:
+	- The goal is to speed up read queries and analysis
+	- Normalisation traditionally removes duplicate copies of the same data
+	- Many dimensions slows read and write speed.
+	- Star scema pulls the fact data from the dimensional tables, duplicates and stores it in the fact table.
+	- All tables connect at the same source, therefore decreasing the time to read and write.
+
+Benefits of star schemas:
+	- Queries are all simpler as they all connect to one point.
+	- Easier business insights as pulling business reports is easier.
+	- Better performing queries - removes bottlenecks.
+	- Can use star schemas to build OLAP cubes.
+
+Challenges of star schemas:
+	- Decreased data integrity - due to Denormalisation
+	- Less capable of handling complex queries.
+	- No Many to many relationship.
+
+Snowflake schema:
+	- The purpose of a snowflake schema is to normalise the data in a star schema.
+	- It is multidimensional with fact tables at the core, connecting information in the dimension tables.
+	  The difference si that the dimension tables in the snowflake schema divide themselves in to multiple tables.
+	- The snowflake schema splits the fact tables into 'normalised dimension tables'.
+	  As they are normalised, there are more dimension tables, reducing data integrity issues.
+	  Querying is more challenging and it is more likely to require a longer query than a star schema.
+	- You can save storage by normalising attributes, however the queries required will be much longer.
+
+OLAP servers:
+	- OLAP servers are based on a multidimensional view of data (Data cubes)
+	- They collect data from multiple from multiple data sources including relational databases.
+
+OLAP Roll-up:
+	- Performs aggregation by:
+		- 'Climbing' a concept hierachy for a dimension
+		- Dimension reduction data grouped by city rather than country in the example (Week 6 slide 19)
+	- One or more dimensions of the data cube are removed.
+
+OLAP Drill-down:
+	- Reverse of Roll-up
+	- Two ways to do:
+		- 'Stepping Down' a concept hierachy for a new dimension
+		- Introducing a new dimension (e.g. drilling down from quarters to months)
+	- One or more dimensions are added to the data cube.
+	- Go from less detailed data to highly detailed data.
+
+OLAP Slice:
+	- Selects one specific dimension and creates a new sub-cube.
+
+OLAP Dice:
+	- Selects two or more dimensions and provides a new sub-cube.
+
+OLAP Pivot:
+	- Rotate data axes to provide alternative presentation of data.
+
+Summary: 
+	- Data warehouses can use star and snowflake schema.
+	- Data warehouses use OLAP servers which take the form of a cube data structure.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+--              Week 7           --
+-- Data standards and Governance --
+
+Overview:
+	- Summary of Data standards
+	- Data Governance
+	- The GDPR
+	- Managing data
+	- Practical exercise?
+
+Data Standards:
+	- Data consistency is essential for everyday situations:
+		- e.g. Choosing the right battery (AA or AAA)
+		- Putting the right fuel in a car.
+		- Ensuring that dates are in the correct format
+	- If different groupes have different standards, data exchange is difficult
+	- Therefore it is important organisations document how they organise data.
+
+Data stewardship:
+	- Definition:
+		- Stewardship is the careful, responsible management of something entrsted to ones care on behalf of others.
+
+	- The stewardship of data is the responsibility of the groups that hold onto the data.
+	- There should be clearly designated people responsible for the formulation and enforcement on how data is stored and accessed.
+	- There are also legal responsibilites (i.e. General Data Protection Regulation)
+	- With all these factors in mind, a data governances policy is usually a good idea.
+
+Data Governance:
+	- Data governance defines how an organisation collects, stores, processes and uses data.
+	- It needs to also comply with relevant laws.
+	- It should also cover the entire lifecycle of data.
+	- The four 'Pillars' of data governance are:
+		- Data stewardship
+		- Data Quality
+		- Data Management
+		- Use cases
+
+Data Governance:
+	- Why worry: you dont want data breaches!!
+
+The GDPR:
+	- THe data protection act 2018 is the UKs GDPR.
+	- The GDPR states:
+		- You should only collect the minimal amount of data needed
+		- You should only collect data that is relevant
+		- You take steps to protect the data and report breaches
+		- You retain the data for the shortest time possible
+		- Relevant people can request access to their data and can request their data is deleted
+
+	- Anonymous data does not fall under the GDPR Regulation
+	- However pseudonymous data does!
+		- This includes data like a postcode or student number
+		- Could be reverse engineerd to obtain the original persons identity.
+
+Data value and cost:
+	- ALl produced data has a value and associated cost.
+	- The value of data depends on the relevance of the data to make a company money.
+	- The cost is associated with storing and retrieving the data and ensuring it is properly safeguarded.
+	- Small amounts of data is usually straightforward to manage; For comanies, retaining all data is not feasible.
+	- Therefore, companies should develop data governance mechanisms.
+
+Data quality:
+	- In its raw form, data may be of low quality due to lack of context, clarity or spurious information.
+	- Therefore data is frequently processed or "Cleaned up" depending on how its used.
+	- Ideally, any changes should be recorded and the original copies retained.
+	- The overall aim should be to ensure that data remains accurate, complete and consistent.
+
+Information life cycle:
+	- Tier 1: useful data, usually halfway through its life cycle
+	- Tier 2: Brand new, unprocessed data, or older, irrelevent data.
+	- Tier 3: Old data that is to be archived.
+
+Data management:
+	- Depending on the data lifecycle, data should be available to for use at the right time and in the right way.
+		- I.e. recent and/or usedful data should be easy to access.
+		- Older or less useful data shoud be stored for possible future use.
+		- Metadata should be used where appropriate.
+
+Costs and use cases:
+	- Hoarding data is not ideal due to high costs. Therefore, when creating a data governance policy
+	  the authors should consider how and why data is used. What is the best way to do this.
+
+Data governance practices:
+	- An organisations data governance can be described:
+		- A single 'master' document
+		- Spread across multiple groups depending on how they use data
+		- Incorporated into staff training
+		- Formed as part of standard working practices (i.e. the use of data management software)
+
+	- The main thing is that people are aware of their obligations.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+--                          Week 8!                             --
+-- Information Retrieval - Search engines, spiders and crawlers --
+
+Information retrieval:
+	- Information retrieval describes the structure, analysis, organisation, storage, searching and retrieval of information.
+	- Distinction between a document and a database record - most information is unstructured text.
+	- Need to design algorithms that can compare text - difficult
+	- Understanding how people compare texts and designing algorithms to do this is the very core of information retrieval.
+
+Dimensions of information retrieval:
+
+Content:          Applications        Tasks
+Text              Web search          Ad-hoc search
+Images            Vertical search     Filtering
+Video             Enterprise search   classification
+Scanned documents Desktop search      Question answering
+Audio             p2p search         
+Music
+
+Big issues:
+	- Relevance:
+		- Topical relevance and user relevance
+		- Retrieval models
+		- Ranking algorithms
+	- Information-needs:
+		- Query suggestion
+		- Query expansion
+		- Relevance feedback
+	- Evaluation
+		- Precision and recall
+		- Test collections
+		- Clickthrough and log data
+
+Search engines:
+	- Information-retrieval:
+		- Relevance -- effective Ranking
+		- Evaluation -- Testing and measuring
+		- Information needs -- user interaction
+	- Search engines
+		- Performance -- Efficient search and indexing
+		- incorporating new data -- Coverage and freshness
+		- Scalability -- Growing with data and users
+		- Adaptability -- Tuning for applications
+		- Specific problems -- e.g. spam
+
+Search engine architecture:
+	- Two primary goals:
+		- Effectiveness -- quality and relevance
+		- Efficiency -- want to process queries from users as quickly as possible
+
+Text aquisition:
+	Crawler
+	- General web crawler is the most common
+	- Follows links to new pages to discover and download new pages
+	- Challenges with handling huge volume of new pages and ensuring that pages that have changed are kept fresh for search engines.
+	- Can be restricted to a single sight for site search
+	- Focused or Topical crawlers -- use classification techniques to restrict pages that are visited.
+
+	Feeds
+	- Document feeds -- access real time stream of documents
+	- Search engine acquires new documents by simply monitoring the feed
+	- Common standard RSS (Really simple syndication)
+	- Reader monitors feed and provides new content when it arrives.
+			 Can be audio, video streams as well as documents.
+
+	Conversion 
+	- Documents in a feed are rarely in plain text
+	- Search engines require them to be converted into a consisten text plus metadata format
+	- Text transformation Component
+	- Encoding -- ASCII
+
+	Document-Data-Store
+	- A database to manage large numbers of documents and the structured data associated with them.
+	- Contents typically stored in compressed form.
+	- Structured data consists of metadata and other information such as links, anchor text (Blue links).
+	- Can use a relational database but some applications use simpler more efficient storage systems to provide fast retrieval times.
+
+Text Transformation:
+	Parser
+	- Responsible for processing the sequence of text tokens
+	- In many cases, tokens are the same as words
+	- Tokenising can be non-trivial
+	- Uses knowledge of the syntax of the markup language to identify the structure
+
+	Stopping
+	- Removes the common words from the stream of tokens that become index terms
+	- Most common words are function words that help form sentence structure e.g. (the, of, to and for)
+	- Removal reduces the size of the index
+	- Doesnt affect the search engines Effectiveness
+	- Can be difficult to decide what words to have on the stop-word list
+
+	Stemming
+	- Group words together that are derived from a common stem e.g. (fish, fishes and fishing)
+	- Replace each member of a group with one designated words -- Will increase the likelihood that words in queries and documents will match.
+	- May not be effective for some languages e.g. (Japanese, Chinese)
+
+	Link-Extraction-and-Analysis
+	- Analysis -- Popularity and authority of a page
+	- Anchor-text -- enhance the text content of a page that the links point to
+
+	Information-Extraction
+	- Identify complex index terms
+	- Syntactic analysis
+
+	Classifier
+	- Identifies class-related metadata
+	- Assign labels to documents representing topic categories e.g. (sport, spam or advertising)
+	- Use clustering techniques to group documets withous predefined categories.
+
+
+Index Creation:
+	Document-Statistics
+	- Gathers and records statistical information about words, features and documents.
+	- Information is then used by the ranking Component
+	- Actual data is determined by the retrieval model and ranking algorithm
+	- Document statistics are stored in 'lookup' tables -- data structures designed for fast retrieval
+
+	Weighting
+	- Calculates the weights using document statistics and stored in lookup tables
+	- May be calculated as part of a query but better during indexing process -- Makes query proccess more efficient
+	- tf.idf weighting -- gives high weights to terms that occur in very few documents
+
+	Inversion
+	- Core of the indexing process. Changes the stream of document-term information into term-document information. For the creation of inverted indecies
+	- The main challenge is to do this efficiently
+
+	Index-Distribution
+	- Distributes indexes across multiple computers/sites on a newtork.
+
+
+User Interaction:
+	Query-Input
+	- Provides an interface and parser for a query language
+	- Simple query language for most search engines -- Only a small number of operators.
+	- One example -- use of "" -- Indicate that the enclosed words should occur as a phrase in the document.
+	- A typical web query consists of a small number of keywords with no operators.
+	- Boolean query languages: AND, OR and Not
+
+	Query-Transformation
+	- Tokenisation, stopping and stemming must be done on the query text to produce index terms that are comparable to the document terms.
+	- Spell-checking and query suggestion
+	- Query expansion techniques also suggest additional terms.
+
+	Results-output
+	- Component is responsible for constructing display of ranked documents
+	- Generate snippets to summarise retrieved documents, cluster output to identify related documents, higlight key words and passages in documents
+
+
+Ranking:
+	Scoring 
+	- (Query processing) calculate scores for document using the ranking algorithm.
+
+	Performance-Optimisation
+	- Design of ranking algorithms to decrease response time and increase query throughput
+	- Number of different ways to calculate scoring:
+		- Term-at-a-time scoring
+		- Document-at-a-time scoring
+
+	Distribution
+	- Ranking can also be distributed
+	- Query Broker
+	- Caching
+
+Evaluation:
+	- Logging -- One of the most valuable sources of info for tuning and improving search engines
+	- Ranking analysis -- Uses log data/relevance judgement pairs to measure and compare ranking algorithm effectiveness
+	- Performance analysis component -- Monitoring and improving overall effectiveness
+	- Response time, throughput and network usage
+	- Simulation
+
+
+Crawls and feeds:
+	- Crawling -- finding and downloading webpages automatically. Occasionaly known as spidering and a crawler is sometimes called a spider.
+	- Sheer scale
+	- Web pages usually not under the control of those building the search engine database
+
+Retrieving web pages:
+	Scheme:   (https://)
+	Hostname: (www.ncl.ac.uk)
+	Resource: (staffandstudents/)
+
+	- Client program connects to a domain name system (DNS) Server
+	- DNS server translates the hostname into an internet protocol address (IP)
+	- The program then attempts to connect to a server computer with that IP address
+	- Once connection is established, the client program sends a http request to the web server to request a page
+	- GET  request
+	- POST request
+
+Web crawler:
+	- If a web server is not very powerful -- may spend all its time handling requests from the crawler
+	- Tends to make web server admins angry
+	- Politeness policies
+	- Request queue is split into a single queue per web server
+	- Politeness window
+
+Focused Crawling:
+	- Focused or topical crawling -- less expensive approach
+	- Relies on the fact that web pages tend to have links to other pages on the same topic
+	- In practice -- Use a number of popular pages as seeds
+	- Use text classifiers to determine what page is about
+	- If page is on topic, keeps the page and uses links from the page to find other related sites
+	- Anchor text is important
+	- Crawler keeps track of topicality of download pages
+	- Uses this to determine wether to download similar pages
+	- Anchor text data and page link topicality data can be conbined together to determine which pages should be crawled next
+
+Deep web:
+	- Difficult for a crawler to find
+	- Three categories
+		- Private sites -- need an account
+		- Form results -- flight timetables
+		- Scripted pages -- JavaScript
+
+Document feeds:
+	- Many documents published -- created at a fixed time and rarely updated again
+	- Since they have an associated time -- can be ordered in a sequence called a document feed
+	- Particularly interesting to crawlers -- easily examine for new documents by looking at just the end of the feed
+	- Two kinds of feed -- Push and Pull
+	- Push alerts the subscriber to check periodically
+	- A Pull feed requires the subscriber to check periodically
+	- Most common format for pull feeds is called RSS
+		- Really Simple Syndication
+		- RDF Site Summary
+		- Rich Site Summary
+	- Each entry contains a time of publication and a tag (ttl) -- Time to live -- measured in minutes.
+	- Advantages over traditional pages (for crawlers)
+		- Give a natural structure to the data
+		- Easy to parse and contain detailed time information
+		- Single location to look fot new data
+
+The conversion problem:
+	- Text documents stored in incompatible formats -- PDF, raw text, RTF, HTML, XML and others
+	- Other kinds of files such as PPT and Excel spreadsheets and sometimes obsolete formats
+	- Use conversion tools -- tagged format (XML, HTML)
+	- Readability not the concern of the search engine
+
+Document storage:
+	- Documents need to be stored for indexing
+	- Crawling for documents can be expensive in terms of CPU and network load
+	- It makes sense to keep documents around instead of trying to fetch them again the next time you want to build an index
+	- Storage systems can be a starting point for Information-Extraction
+
+Document storage -- Database:
+	- For many applications a database is an excellent place to store documents
+	- However, few of the major search engines use a relational database
+		- Sheer volume of data can overwhelm traditional database
+		- Database vendors expect that servers will use expensive disk systems -- impractical due to the size
+		- Use alternatives instead
+
+BigTable:
+	- Used internally at google
+	- Distributed database system built for storing web pages originally
+	- Is a very big table -- over a petabyte in size -- each database contains one table
+	- The table is split into small pieces called tablets, which are served by thousands of machines
+	- Any changes to a BigTable tablet is recorded in the transaction log stored in a shared file system
+	- If any tablet server crashes, then another server can immediately read the tablet data and transaction log from the file system and take over.
+	- BigTable stores its data in unchangable files
+	- Can have a huge number of columns per row
+	- Not all rows have the same columns
+	- All anchor information in single record
+	- Only a single disk read needed to read all of the document data
+	- Range based partitioning
+
+Summary:
+	- Brief overview of dimensions of information retrieval and touched on some big issues
+	- In depth look at search engine architecture
+	- Overview of crawls and feeds and their behaviour
+	- Brief look at text conversion problem
+	- Look at BigTable from Google as an example of distributed database designed to retrieve web pages.
