@@ -161,6 +161,15 @@ Back:
 	- Good for varied data but may lead to duplication and inconsistency.
 
 
+Question:
+	You have been asked for advice by a friend who is trying to choose a database for their employer. 
+	The database is to store car parts. Each part has a number of different characteristics associated with 
+	it and there are approximately 1 million parts. The main operations required are to add new parts, 
+	delete withdrawn parts and to query the description of a part to see which match a value entered by a user. 
+	State whether you feel a document database or an RDBMS would be most appropriate and explain why. 
+
+
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
