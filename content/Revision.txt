@@ -180,6 +180,25 @@ Answer:
 	Clustered index refers to how the data is stored on a disk. As data can be stored in only one order, then there can only be one clustered index.
 	For example, the primary key for a relation can be stored in a clustered index allowing other columns to point to it.
 
+Question:
+	One issue which could hit a database system is a bug in a user’s 
+	program accidentally deleting some key data. Briefly describe two other issues. 
+
+Answer:
+	- A flood could damage the server room.
+	- A hacker could try and overload the server (DDOS Attack)
+
+Question:
+	How can the log file be used to show transactions which were incomplete when an issue occurred
+
+Answer:
+	There will be no COMMIT or ROLLBACK in the log.
+
+Question:
+	Briefly explain how the log file can be used to recover from such an error situation.
+
+Answer:
+	The log file can be used to undo any complete processes that the incomplete transaction did to help maintain atomicity with transactions.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -995,3 +1014,26 @@ Summary:
 	- Overview of crawls and feeds and their behaviour
 	- Brief look at text conversion problem
 	- Look at BigTable from Google as an example of distributed database designed to retrieve web pages.
+
+Question:
+	Describe why website administrators may not approve of the use of web crawlers 
+
+Answer:
+	Having many web cralwers collect data on a single site can put lots of stress on the web server, making it difficult for actual users to 
+	properly use the web page and increasing the cost for the owner.
+
+Question:
+	Discuss three ways website administrators can manage/restrict the use of web crawlers 
+
+Answer:
+	- Make use of politeness policies - set time limits and queues for when cralers can access the page.
+	- Use 'robots.txt' to restrict access to the page
+	- Use 'Dark Web' tactics to restrict further access to the web page (i.e. requiring login, JavaScript etc...)
+
+Question:
+	Google use BigTable as a storage mechanism for documents they have crawled. 
+	Discuss why using BigTable may be more suitable for a search engine than a traditional relational database.
+
+Answer:
+	
+
