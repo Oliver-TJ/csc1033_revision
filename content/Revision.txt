@@ -168,6 +168,17 @@ Question:
 	delete withdrawn parts and to query the description of a part to see which match a value entered by a user. 
 	State whether you feel a document database or an RDBMS would be most appropriate and explain why. 
 
+Answer:
+	- Document database would suit more as it is better for large quantities of data (1 million car parts).
+	- As each part has a different number of characteristics then a document database would suit this as a RDBMS could have lots of null values.
+
+Question:
+	A RDBMS can use indexing for performance reasons. 
+	Explain the terms Clustered index and Non-Clustered index and give one example of a column you may wish to index.
+
+Answer:
+	Clustered index refers to how the data is stored on a disk. As data can be stored in only one order, then there can only be one clustered index.
+	For example, the primary key for a relation can be stored in a clustered index allowing other columns to point to it.
 
 
 
@@ -611,7 +622,7 @@ Query:
 Query:
 	To get two types of descriptions:
 
-	query = ("$or": ["Description": "Flour"], ["Description": "Sugar"])
+	query = {"$or": [{"Description": "Flour"}, {"Description": "Sugar"}]}
 
 	Will return a table of all items with a desctiption of sugar or flour.
 
